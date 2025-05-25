@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function createTable(){  
+            
+            let number = prompt("Enter the number");
+            let tableContent = "";
+
+          for (let i = 1; i <= 10; i++) {
+                tableContent += number + " × " + i + " = " + (number * i) + "<br>";
+            }
+
+            document.getElementById("table").innerHTML = tableContent;
+
+
+        }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="createTable()">Create a Table</button>
+    <p id="table"></p>
+</body>
+</html>
